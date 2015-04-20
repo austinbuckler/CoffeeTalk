@@ -6,23 +6,26 @@
             {{> yield}}
         </div>
     </div>
-    <ul class="mfb-component--br mfb-slidein" data-mfb-hover>
-        <li class="mfb-component__wrap">
-            <!-- the main menu button -->
-            <a class="mfb-component__button--main">
-                <!-- the main button icon visibile by default -->
-                <i class="mfb-component__main-icon--resting glyphicon glyphicon-search"></i>
-                <!-- the main button icon visibile when the user is hovering/interacting with the menu -->
-                <i class="mfb-component__main-icon--active glyphicon glyphicon-ice-lolly-tasted"></i>
-            </a>
-            <ul class="mfb-component__list">
-                <!-- a child button, repeat as many times as needed -->
-                <li>
-                    <a href="/" data-mfb-label="das label" class="mfb-component__button--child">
-                        <i class="mfb-component__child-icon glyphicon glyphicon-sunglasses"></i>
-                    </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+    {{#if currentUser}}
+        <ul id="menu" class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
+            <li class="mfb-component__wrap">
+                <a href="{{pathFor 'postSubmit'}}" class="mfb-component__button--main">
+                    <i class="mfb-component__main-icon--resting glyphicon glyphicon-plus"></i>
+                    <i class="mfb-component__main-icon--active glyphicon glyphicon-pencil"></i>
+                </a>
+                <ul class="mfb-component__list">
+                    <li>
+                        <a href="#" data-mfb-label="Settings" class="mfb-component__button--child">
+                            <i class="mfb-component__child-icon glyphicon glyphicon-cog"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-mfb-label="Profile" class="mfb-component__button--child">
+                            <i class="mfb-component__child-icon glyphicon glyphicon-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    {{/if}}
 </template>
