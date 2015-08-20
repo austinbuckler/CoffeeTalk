@@ -1,0 +1,23 @@
+<template name="profileEdit">
+    <form class="main form page">
+        <div class="form-group {{errorClass 'screenName'}}">
+            <label class="control-label" for="screenName">Screen Name</label>
+            <div class="controls">
+                <input name="screenName" id="screenName" type="text" value="{{profile.screenName}}"
+                  placeholder="Your Screen Name" class="form-control"/>
+                <span class="help-block">{{errorMessage 'screenName'}}</span>
+            </div>
+        </div>
+        <!-- <div class="form-group {{errorClass 'profilePic'}}">
+            <label class="control-label" for="profilePic">Profile Picture</label>
+            <div class="controls">
+                <input name="profilePic" id="profilePic" type="text" value="{{profilePic}}"
+                  placeholder="Upload a Picture" class="form-control"/>
+                <span class="help-block">{{errorMessage 'profilePic'}}</span>
+            </div>
+        </div> -->
+        <input type="submit" value="Submit" class="btn btn-primary submit"/>
+        <hr/>
+        <a class="btn btn-danger delete" href="#">Delete Account</a>
+    </form>
+</template>
