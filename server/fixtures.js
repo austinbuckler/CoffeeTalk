@@ -10,6 +10,38 @@ if (Posts.find().count() === 0) {
     });
 
     Posts.insert({
+        title: 'Bill Gates is worth 1 Trillion dollars as of 04.06.2015',
+        author: 'Jack Daniels',
+        url: 'http://google.com/',
+        submitted: new Date(now - 7 * 3600 * 100),
+        commentCount: 0
+    });
+
+    Posts.insert({
+        title: 'Bill Gates is worth 1 Trillion dollars as of 04.06.2015',
+        author: 'Jack Daniels',
+        url: 'http://google.com/',
+        submitted: new Date(now - 7 * 3600 * 100),
+        commentCount: 0
+    });
+
+    Posts.insert({
+        title: 'Bill Gates is worth 1 Trillion dollars as of 04.06.2015',
+        author: 'Jack Daniels',
+        url: 'http://google.com/',
+        submitted: new Date(now - 7 * 3600 * 100),
+        commentCount: 0
+    });
+
+    Posts.insert({
+        title: 'Bill Gates is worth 1 Trillion dollars as of 04.06.2015',
+        author: 'Jack Daniels',
+        url: 'http://google.com/',
+        submitted: new Date(now - 7 * 3600 * 100),
+        commentCount: 0
+    });
+
+    Posts.insert({
         title: 'Hacker News is being updated!',
         author: 'Burt Reynolds',
         url: 'http://news.ycombinator.com/',
