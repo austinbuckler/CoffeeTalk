@@ -6,7 +6,9 @@ if (Posts.find().count() === 0) {
         author: 'Jack Daniels',
         url: 'http://google.com/',
         submitted: new Date(now - 7 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -14,7 +16,9 @@ if (Posts.find().count() === 0) {
         author: 'Jack Daniels',
         url: 'http://google.com/',
         submitted: new Date(now - 7 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -22,7 +26,9 @@ if (Posts.find().count() === 0) {
         author: 'Jack Daniels',
         url: 'http://google.com/',
         submitted: new Date(now - 7 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -30,7 +36,9 @@ if (Posts.find().count() === 0) {
         author: 'Jack Daniels',
         url: 'http://google.com/',
         submitted: new Date(now - 7 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -38,7 +46,9 @@ if (Posts.find().count() === 0) {
         author: 'Jack Daniels',
         url: 'http://google.com/',
         submitted: new Date(now - 7 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -46,7 +56,9 @@ if (Posts.find().count() === 0) {
         author: 'Burt Reynolds',
         url: 'http://news.ycombinator.com/',
         submitted: new Date(now - 7 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -54,7 +66,9 @@ if (Posts.find().count() === 0) {
         author: 'Austin Buckler',
         url: 'http://meteor.com/',
         submitted: new Date(now - 9 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 
     Posts.insert({
@@ -62,6 +76,8 @@ if (Posts.find().count() === 0) {
         author: 'Austin Buckler',
         url: 'http://reddit.com/',
         submitted: new Date(now - 4 * 3600 * 100),
-        commentCount: 0
+        commentCount: 0,
+        upvoters: [],
+        votes: 0
     });
 }
