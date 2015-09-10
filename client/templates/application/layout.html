@@ -6,26 +6,4 @@
             {{> yield}}
         </div>
     </div>
-    {{#if currentUser}}
-        <ul id="menu" class="mfb-component--br mfb-slidein" data-mfb-toggle="hover">
-            <li class="mfb-component__wrap">
-                <a href="{{pathFor 'postSubmit'}}" class="mfb-component__button--main">
-                    <i class="mfb-component__main-icon--resting glyphicon glyphicon-plus"></i>
-                    <i class="mfb-component__main-icon--active glyphicon glyphicon-pencil"></i>
-                </a>
-                <ul class="mfb-component__list">
-                    <li>
-                        <a href="{{pathFor 'profileEdit'}}" data-mfb-label="Settings" class="mfb-component__button--child">
-                            <i class="mfb-component__child-icon glyphicon glyphicon-cog"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-mfb-label="Profile" class="mfb-component__button--child">
-                            <i class="mfb-component__child-icon glyphicon glyphicon-user"></i>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    {{/if}}
 </template>

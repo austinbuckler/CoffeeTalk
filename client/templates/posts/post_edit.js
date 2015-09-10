@@ -45,7 +45,7 @@ Template.postEdit.events({
                     return throwError(error.reason);
                 }
 
-                Router.go('postsList');
+                Router.go('home');
             });
         }
     }
